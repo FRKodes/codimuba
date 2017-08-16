@@ -1,0 +1,19 @@
+/*
+Theme Name: CODIMUBA
+Theme URI: https://codimuba.com
+Author: Blue Terrier Studio
+Author URI: http://blueterrier.mx/
+Description: CODIMUBA Custom Theme was developed exclusively for CODIMUBA. With a focus on business site, it features custom premium front page, navigation, a logo, and more. This theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CODIMUBA
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+	background: purple
+}
