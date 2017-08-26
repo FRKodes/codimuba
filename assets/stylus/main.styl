@@ -1,0 +1,344 @@
+gris = #686868
+olivo = #8f8c59
+verde = #908C5A
+amarillo = #EAB23F
+
+.olivo
+	color olivo
+.verde
+	color verde
+.gris
+	color gris
+.amarillo
+	color amarillo
+	
+.raleway
+	font-family 'Raleway', sans-serif
+body
+	background white
+	color gris
+	font-family 'Open Sans Condensed', sans-serif
+#masthead
+	position fixed
+	z-index 100
+	width 100%
+.navbar
+.menu-menu-top-container
+	background rgba(black, .5)
+	display flex
+	justify-content flex-start
+	align-items center
+	border none
+	margin-bottom 0
+	z-index 100
+	width 100%
+	position absolute
+	text-transform uppercase
+.navbar-toggler
+	background none
+	border none
+	width 30px
+	height 30px
+	position absolute
+	right 15px
+	padding 0
+	.icon-bar
+		background white
+		width 100%
+		height 4px
+		margin 5px 0
+		display block
+.navbar-collapse
+	width 100%
+	position absolute
+	top 25px
+	background rgba(black, .5)
+	border none
+	li
+		display block
+		margin-bottom 5px
+		margin-top 5px
+		a
+			color white
+		&:first-of-type
+			margin-top 15px
+		&:last-of-type
+			margin-bottom 15px
+.top-home-images-container
+	overflow hidden
+	.image
+		height 210px
+		background-color rgba(black, .7)
+		a
+			width 100%
+			height 100%
+			display block
+		&.main
+			background transparent url(./images/sillon-movil.jpg) no-repeat center center
+			background-size cover
+			height 520px
+			position relative
+			.text-container
+				position absolute
+				left 15px
+				bottom 150px
+				p
+					color amarillo
+			h1
+				margin 0
+				color white
+				text-transform uppercase
+				font-weight 100
+		&.secondary
+			position relative
+			.cat-title
+				position absolute
+				left 15px
+				bottom 10px
+				color white
+				font-size 1.3em
+				font-weight 100
+		&.bed
+			background transparent url(./images/home-cama-destacado.jpg) no-repeat center center
+			background-size cover
+		&.sofa
+			background transparent url(./images/home-sillon-destacado.jpg) no-repeat center center
+			background-size cover
+h2.title
+	text-align center
+	font-size 1.5em
+	position relative
+	font-weight 100
+	padding-bottom 5px
+	&::before
+		content ''
+		width 160px
+		height 2px
+		background-color amarillo
+		display inline-block
+		position absolute
+		bottom 0
+		left 50%
+		margin-left -80px
+.image-container
+	height 130px
+	background-color purple
+	a
+		display block
+		width 100%
+		height 100%
+.info-container
+	h3
+		margin 5px 0
+		font-size 1em
+.why-container
+	display block
+.why-icon-container
+	padding-top 20px
+	display block
+	span
+		font-size 9em
+		color amarillo
+.why-info-container
+	padding 0 20px
+	color gris
+	.title
+		font-weight bold
+		margin-bottom 5px
+.slick-dots
+	margin 25px 0
+	padding 0
+	text-align center
+	li
+		display inline-block
+		border-radius 50%
+		width 6px
+		height 6px
+		overflow hidden
+		margin 0 5px
+		background-color rgba(gris, .3)
+		&.slick-active
+			background-color amarillo
+		button
+			background none
+			border none
+			color transparent
+footer
+	text-transform uppercase
+	.first-block
+		background rgba(verde, .25)
+		padding 15px 0
+	.second-block
+		background rgba(verde, .5)
+		padding 20px 0
+	.social-links
+		padding 0
+		margin 0
+		text-align center
+		li
+			display inline-block
+			margin 0 5px
+			a
+				color verde
+				font-size 2.8em
+	.footer-menu-block
+		ul
+			padding 0
+			margin 0 auto 10px auto
+			width 90%
+			&.one
+				border-bottom 1px solid white
+		li
+			display block
+			margin-bottom 3px
+			a
+				color white
+@media screen and (min-width: 425px)
+	.image-container
+		height 190px
+@media screen and (min-width: 768px)
+	.navbar
+		justify-content space-between
+		background none
+	button.navbar-toggler
+		display none
+	.menu-menu-top-container
+		display inline-block
+		position relative
+		padding 0
+		background none
+		display flex !important
+	.navbar-collapse
+		display inline-block
+		position relative
+		top 0
+		padding 0
+		margin 0
+		background none
+		&.collapse
+			display flex !important
+			justify-content flex-end
+		li
+			display inline-block
+			margin 0 10px
+			&:first-of-type
+				margin-top 0
+			&:last-of-type
+				margin-bottom 0
+			a
+				color white
+	.image-container
+		height 160px
+	.top-home-images-container
+		.image
+			&.main
+				background transparent url(./images/sillon.jpg) no-repeat center center
+				background-size cover
+				height 580px
+				position relative
+				.text-container
+					width 350px
+				h1
+					font-size 3em
+			&.secondary
+				position relative
+				width 50%
+				float left
+				.cat-title
+					position absolute
+					left 15px
+					bottom 10px
+					color white
+					font-size 1.3em
+					font-weight 100
+			&.bed
+				background transparent url(./images/home-cama-destacado.jpg) no-repeat center center
+				background-size cover
+			&.sofa
+				background transparent url(./images/home-sillon-destacado.jpg) no-repeat center center
+				background-size cover
+	footer
+		.first-block
+			height 140px
+		.second-block
+			height 140px
+		.social-links
+			padding-top 10px
+			margin 0
+			text-align center
+			li
+				display inline-block
+				margin 0 5px
+				a
+					color verde
+					font-size 2.8em
+		.footer-menu-block
+			width 33%
+			float left
+			ul
+				padding-left 10px
+				border-left 1px solid white
+				&.one
+					border none
+@media screen and (min-width: 992px)
+	.navbar
+		width 970px
+		margin 0 auto
+		position relative
+	.image-container
+		height 215px
+	.top-home-images-container
+		.image
+			&.main
+				background transparent url(./images/sillon.jpg) no-repeat center center
+				background-size cover
+				height 580px
+				width 60%
+				position relative
+				display inline-block
+				.text-container
+					width 450px
+				h1
+					font-size 3.4em
+		.secondary-images-container
+			width 40%
+			float right
+			height 580px
+			background purple
+			.image
+				width 100%
+				display block
+				height 50%
+	footer
+		.footer-menu-block
+			width 30%
+@media screen and (min-width: 1200px)
+	.navbar
+		width 1170px
+	footer
+		.social-links
+			text-align right
+			padding-right 100px
+		.footer-menu-block
+			width 25%
+@media screen and (min-width: 1400px)
+	.top-home-images-container
+		.image
+			&.main
+				height 780px
+		.secondary-images-container
+			height 780px
+@media screen and (min-width: 1800px)
+	.top-home-images-container
+		.image
+			&.main
+				height 980px
+		.secondary-images-container
+			height 980px
+@media screen and (min-width: 2200px)
+	.top-home-images-container
+		.image
+			&.main
+				height 1180px
+		.secondary-images-container
+			height 1180px
