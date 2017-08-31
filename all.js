@@ -33,4 +33,18 @@ $(document).ready(function(){
 			}
 		]
 	});
+
+
+
+	$( window ).scroll(function() {
+		var vertical_position = $('body').scrollTop();
+		console.log(vertical_position);
+		if (vertical_position >=1) {
+			$('#masthead').addClass('transparent');
+		}else{
+			$('#masthead').removeClass('transparent');
+		};
+	});
+	
+
 });

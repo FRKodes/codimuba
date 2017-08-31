@@ -2,7 +2,8 @@ gris = #686868
 olivo = #8f8c59
 verde = #908C5A
 amarillo = #EAB23F
-
+.white
+	color white
 .olivo
 	color olivo
 .verde
@@ -11,7 +12,12 @@ amarillo = #EAB23F
 	color gris
 .amarillo
 	color amarillo
-	
+.cien_font
+	font-weight 100
+h1
+	font-family 'Raleway', sans-serif
+	font-weight 100
+	padding-right 100px
 .raleway
 	font-family 'Raleway', sans-serif
 body
@@ -19,12 +25,18 @@ body
 	color gris
 	font-family 'Open Sans Condensed', sans-serif
 #masthead
+	background none
 	position fixed
-	z-index 100
 	width 100%
+	z-index 100
+	transition background .4s ease
+#masthead.transparent
+	.navbar
+		background rgba(olivo, .95) !important
+		transition background .7s ease
 .navbar
 .menu-menu-top-container
-	background rgba(black, .5)
+	background none
 	display flex
 	justify-content flex-start
 	align-items center
@@ -52,7 +64,7 @@ body
 	width 100%
 	position absolute
 	top 25px
-	background rgba(black, .5)
+	background rgba(olivo, .95)
 	border none
 	li
 		display block
@@ -193,6 +205,32 @@ footer
 			margin-bottom 3px
 			a
 				color white
+.banner-page
+	height 400px
+	background-position center center
+	background-size cover
+.back-olivo
+	background-color olivo
+.first-block-page
+	&.quienes-somos
+		padding-bottom 170px
+.phrase-image-container
+	height 510px
+	background-size cover
+	background-position center center
+	margin-top -150px
+	position relative
+	display flex
+	align-items center
+	.phrase
+		background rgba(black, .8)
+		padding 30px 35px
+		width 100%
+		text-align center
+		font-size 1.2em
+.complementary-text
+	padding-top 30px
+	padding-bottom 30px
 @media screen and (min-width: 425px)
 	.image-container
 		height 190px
@@ -200,6 +238,10 @@ footer
 	.navbar
 		justify-content space-between
 		background none
+	#masthead.transparent
+		.navbar
+			background rgba(olivo, .95) !important
+			border-radius 0
 	button.navbar-toggler
 		display none
 	.menu-menu-top-container
@@ -257,6 +299,25 @@ footer
 			&.sofa
 				background transparent url(./images/home-sillon-destacado.jpg) no-repeat center center
 				background-size cover
+	.banner-page
+		height 550px
+	.phrase-image-container
+		height 500px
+		align-items flex-start
+		.phrase
+			padding 30px 160px
+			font-size 1.3em
+			margin-top 80px
+			position relative
+			&::before
+				content ''
+				width 140px
+				height 2px
+				background-color amarillo
+				position absolute
+				left 50%
+				bottom 20px
+				margin-left -70px
 	footer
 		.first-block
 			height 140px
@@ -281,6 +342,11 @@ footer
 				&.one
 					border none
 @media screen and (min-width: 992px)
+	#masthead.transparent
+		background rgba(olivo, .95) !important
+		transition background .7s ease
+		.navbar
+			background none !important
 	.navbar
 		width 970px
 		margin 0 auto
@@ -309,12 +375,20 @@ footer
 				width 100%
 				display block
 				height 50%
+	.banner-page
+		height 440px
 	footer
 		.footer-menu-block
 			width 30%
 @media screen and (min-width: 1200px)
 	.navbar
 		width 1170px
+	.banner-page
+		height 650px
+	.phrase-image-container
+		.phrase
+			padding 30px 240px
+			font-size 1.4em
 	footer
 		.social-links
 			text-align right
