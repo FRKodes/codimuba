@@ -14,6 +14,8 @@ amarillo = #EAB23F
 	color amarillo
 .cien_font
 	font-weight 100
+textarea
+	resize none
 h1
 	font-family 'Raleway', sans-serif
 	font-weight 100
@@ -46,6 +48,7 @@ body
 	width 100%
 	position absolute
 	text-transform uppercase
+	transition background .4s ease
 .navbar-toggler
 	background none
 	border none
@@ -54,6 +57,7 @@ body
 	position absolute
 	right 15px
 	padding 0
+	transition background .4s ease
 	.icon-bar
 		background white
 		width 100%
@@ -175,6 +179,7 @@ h2.title
 			background none
 			border none
 			color transparent
+			transition background .4s ease
 footer
 	text-transform uppercase
 	.first-block
@@ -231,6 +236,26 @@ footer
 .complementary-text
 	padding-top 30px
 	padding-bottom 30px
+.form-container
+	padding-top 30px
+	padding-bottom 30px
+.form-control
+	background rgba(gris, .2)
+	border none
+	border-bottom 2px solid gris
+	border-radius 0
+	&:focus
+		outline none
+		border-color gris
+		box-shadow none
+.send-btn
+	border-radius 0
+	border none
+	background gris
+	color amarillo
+	width 100%
+	text-transform uppercase
+	letter-spacing 1px
 @media screen and (min-width: 425px)
 	.image-container
 		height 190px
@@ -238,6 +263,7 @@ footer
 	.navbar
 		justify-content space-between
 		background none
+		transition background .4s ease
 	#masthead.transparent
 		.navbar
 			background rgba(olivo, .95) !important
@@ -257,6 +283,7 @@ footer
 		padding 0
 		margin 0
 		background none
+		transition background .4s ease
 		&.collapse
 			display flex !important
 			justify-content flex-end
@@ -318,6 +345,13 @@ footer
 				left 50%
 				bottom 20px
 				margin-left -70px
+	.col-sm-6
+		.row.first
+			margin-right -10px
+		.row.last
+			margin-left -10px
+	textarea.form-control
+		height 208px
 	footer
 		.first-block
 			height 140px
@@ -347,6 +381,7 @@ footer
 		transition background .7s ease
 		.navbar
 			background none !important
+			transition background .4s ease
 	.navbar
 		width 970px
 		margin 0 auto
