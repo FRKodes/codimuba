@@ -21,11 +21,18 @@ $(document).ready(function(){
 		]
 	});
 
-
+	$('.product-gallery').slick({
+		dots: true,
+		infinite: true,
+		speed: 200,
+		autoplay: true,
+		slidesToShow: 1,
+		arrows: false,
+		adaptiveHeight: true
+	});
 
 	$( window ).scroll(function() {
 		var vertical_position = $('body').scrollTop();
-		console.log(vertical_position);
 		if (vertical_position >=1) {
 			$('#masthead').addClass('transparent');
 		}else{

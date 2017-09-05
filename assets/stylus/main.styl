@@ -32,6 +32,7 @@ body
 	width 100%
 	z-index 100
 	transition background .4s ease
+	top 0
 #masthead.transparent
 	.navbar
 		background rgba(olivo, .95) !important
@@ -126,6 +127,7 @@ h2.title
 	position relative
 	font-weight 100
 	padding-bottom 5px
+	margin-bottom 20px
 	&::before
 		content ''
 		width 160px
@@ -138,7 +140,7 @@ h2.title
 		margin-left -80px
 .image-container
 	height 130px
-	background-color purple
+	background-color rgba(purple, .1)
 	a
 		display block
 		width 100%
@@ -214,6 +216,9 @@ footer
 	height 400px
 	background-position center center
 	background-size cover
+	&.Comedores
+		background url(./images/comedores.jpg) no-repeat center center
+		background-size cover
 .back-olivo
 	background-color olivo
 .first-block-page
@@ -262,7 +267,7 @@ footer
 	border-bottom none
 .archive
 	.banner-page
-		background purple
+		background-color rgba(gris, .5)
 	h1
 		background olivo
 		color white
@@ -280,6 +285,46 @@ footer
 	.image-container
 		background-position center center !important
 		background-size cover !important
+.entry-header
+	padding-top 30px
+	padding-bottom 250px
+	color white
+.product-gallery
+	height 350px
+	display block
+	overflow hidden
+	position relative
+	margin-top -240px
+	margin-bottom 30px
+	.item
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		display inline-block
+		height 300px
+		overflow hidden
+		width 100%
+.slick-list
+	height auto !important
+.related-item
+	height auto
+	margin-bottom 20px
+	overflow hidden
+	.photo
+		width 100%
+		height 140px
+		background-color gris
+		background-position center center
+		background-size cover
+		a
+			width 100%
+			height 100%
+			display block
+	.info
+		padding-top 5px
+		padding-bottom 10px
+	a
+		color gris
 @media screen and (min-width: 425px)
 	.image-container
 		height 190px
@@ -321,6 +366,18 @@ footer
 				margin-bottom 0
 			a
 				color white
+	h2.title
+		text-align left
+		font-size 1.6em
+		padding-bottom 10px
+		margin-bottom 30px
+		&::before
+			width 120px
+			left 0
+			margin-left 0
+	.product-details
+		margin-top 30px
+		margin-bottom 30px
 	.image-container
 		height 160px
 	.top-home-images-container
@@ -400,6 +457,16 @@ footer
 				border-left 1px solid white
 				&.one
 					border none
+	.product-gallery
+		height 550px
+		margin-top -240px
+		.item
+			height 500px
+	.related-item
+		.photo
+			height 160px
+		.info
+			font-size 1.2em
 @media screen and (min-width: 992px)
 	#masthead.transparent
 		background rgba(olivo, .95) !important
@@ -439,6 +506,10 @@ footer
 				height 50%
 	.banner-page
 		height 440px
+	.related-item
+		height 280px
+		.photo
+			height 220px
 	footer
 		.footer-menu-block
 			width 30%
@@ -451,6 +522,15 @@ footer
 		.phrase
 			padding 30px 240px
 			font-size 1.4em
+	.product-gallery
+		height 650px
+		.item
+			height 600px
+			background-size cover
+	.related-item
+		height 320px
+		.photo
+			height 260px
 	footer
 		.social-links
 			text-align right

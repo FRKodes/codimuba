@@ -65,7 +65,7 @@ get_header(); ?>
 				<div class="why-container">
 					<div class="item">
 						<div class="why-icon-container text-center">
-							<span class="icon-exclusivas"></span>
+							<span class="icon-calidad"></span>
 						</div>
 						<div class="why-info-container">
 								<div class="title">Productos de la más alta calidad</div>

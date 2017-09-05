@@ -57,15 +57,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .icon-arrow:before {
   content: "\61";
 }
-.icon-exclusivas:before {
+.icon-calidad:before {
   content: "\62";
 }
-.icon-experiencia:before {
+.icon-exclusivas:before {
   content: "\63";
 }
-.icon-facebook:before {
+.icon-experiencia:before {
   content: "\64";
 }
-.icon-instagram:before {
+.icon-facebook:before {
   content: "\65";
+}
+.icon-instagram:before {
+  content: "\66";
 }
