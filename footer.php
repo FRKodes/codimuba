@@ -19,33 +19,14 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-4 first-block">
 						<ul class="social-links">
-							<li><a href="#" class="icon-facebook"></a></li>
-							<li><a href="#" class="icon-instagram"></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/codimuba" class="icon-facebook"></a></li>
+							<li><a target="_blank" href="https://www.instagram.com" class="icon-instagram"></a></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-8 second-block">
-						<div class="footer-menu-block">
-							<ul class="one">
-								<li><a href="#">Empresa</a></li>
-								<li><a href="#">Contacto</a></li>
-							</ul>
-						</div>
-
-						<div class="footer-menu-block">
-							<ul class="two">
-								<li><a href="#">Salas</a></li>
-								<li><a href="#">Comedores</a></li>
-								<li><a href="#">Recámaras</a></li>
-							</ul>
-						</div>
-
-						<div class="footer-menu-block">
-							<ul class="three">
-								<li><a href="#">Mesas</a></li>
-								<li><a href="#">Centro de entretenimiento</a></li>
-								<li><a href="#">Accesorios</a></li>
-							</ul>
-						</div>
+						<div class="footer-menu-block"><?php wp_nav_menu( array('theme_location' => 'footer', 'menu_class' => 'one') ); ?></div>
+						<div class="footer-menu-block"><?php wp_nav_menu( array('theme_location' => 'footer_2', 'menu_class' => 'two') ); ?></div>
+						<div class="footer-menu-block"><?php wp_nav_menu( array('theme_location' => 'footer_3', 'menu_class' => 'three') ); ?></div>
 					</div>
 				</div>
 			</div>
