@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="wrap">
 
 	<?php if ( have_posts() ) : ?>
-		<header class="page-header banner-page <?php single_cat_title(); ?>"></header>
+		<header class="page-header banner-page <?php echo getProductCatSlug(); ?>"></header>
 		<?php	
 			the_archive_title( '<h1 class="page-title">', '</h1>' );
 			//the_archive_description( '<div class="taxonomy-description">', '</div>' );

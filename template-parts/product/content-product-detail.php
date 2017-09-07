@@ -53,17 +53,17 @@
 			<div class="product-details">
 				<div class="col-sm-4 col-sm-offset-1 col-lg-4 col-lg-offset-0">
 					<p>
-						<b>Clave:</b> <br>
+						<?php if (the_field('clave')) { ?> <b>Clave:</b> <br><?php }; ?>
 						<?php the_field('clave'); ?>
 					</p>
 					<p>
-						<b>Dimensiones:</b> <br>
+						<?php if (the_field('dimensiones')) { ?> <b>Dimensiones:</b> <br><?php }; ?>
 						<?php the_field('dimensiones'); ?>
 					</p>
 				</div>
 				<div class="col-sm-7 col-lg-8">
 					<p>
-						<b>Material:</b> <br>
+						<?php if (get_field('material_1') ||get_field('material_2') ||get_field('material_3') ||get_field('material_4') ||get_field('material_5')) { ?> <b>Material:</b> <br> <?php } ?>
 						<?php if (get_field('material_1')) { ?> <img src="<?php the_field('material_1'); ?>" alt="Material opción 1 <?php the_title(); ?>"> <?php } ?>
 						<?php if (get_field('material_2')) { ?> <img src="<?php the_field('material_2'); ?>" alt="Material opción 2 <?php the_title(); ?>"> <?php } ?>
 						<?php if (get_field('material_3')) { ?> <img src="<?php the_field('material_3'); ?>" alt="Material opción 3 <?php the_title(); ?>"> <?php } ?>
@@ -72,7 +72,7 @@
 					</p>
 
 					<p>
-						<b>Tapiz:</b> <br>
+						<?php if (get_field('tapiceria_1') ||get_field('tapiceria_2') ||get_field('tapiceria_3') ||get_field('tapiceria_4') ||get_field('tapiceria_5')) { ?> <b>Tapiz:</b> <br> <?php } ?>
 						<?php if (get_field('tapiceria_1')) { ?> <img src="<?php the_field('tapiceria_1'); ?>" alt="Tapicería opción 1 <?php the_title(); ?>"> <?php } ?>
 						<?php if (get_field('tapiceria_2')) { ?> <img src="<?php the_field('tapiceria_2'); ?>" alt="Tapicería opción 2 <?php the_title(); ?>"> <?php } ?>
 						<?php if (get_field('tapiceria_3')) { ?> <img src="<?php the_field('tapiceria_3'); ?>" alt="Tapicería opción 3 <?php the_title(); ?>"> <?php } ?>

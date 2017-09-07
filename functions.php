@@ -74,3 +74,9 @@ function create_product_taxonomy() {
 
 	register_taxonomy( 'categoria_prod', array( 'producto' ), $args );
 }
+
+function getProductCatSlug($value='')
+{
+	$cat = get_term_by('name', single_cat_title('',false), 'categoria_prod');
+	return $cat->slug;
+}
