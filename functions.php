@@ -14,17 +14,27 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
-// register_nav_menus( array( 
-// 	'header' => 'Header menu',
-// 	'footer' => 'Footer menu'
-// ) );
-
 function get_my_styles_and_scripts() {
     wp_enqueue_style( 'style.css', get_stylesheet_uri() );
     wp_enqueue_script( 'all.js', get_template_directory_uri() . '/all.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'get_my_styles_and_scripts' );
+
+add_action( 'init', 'create_home_item_post_type' );
+function create_home_item_post_type() {
+  register_post_type( 'links_home',
+    array(
+      'labels' => array(
+        'name' => __( 'Links Producto(s) Destacado(s)' ),
+        'singular_name' => __( 'Link Producto(s) Destacado(s)' ),
+        'add_new' => __( 'Agregar Link Producto(s) Destacado(s)' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
+    )
+  );
+}
 
 add_action( 'init', 'create_product_post_type' );
 function create_product_post_type() {
@@ -40,9 +50,6 @@ function create_product_post_type() {
       'supports'=> array('title', 'editor', 'thumbnail', 'page-attributes'),
     )
   );
-
-
-
   flush_rewrite_rules();
 }
 add_action( 'init', 'create_product_taxonomy', 0 );

@@ -18,42 +18,62 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		
 		<div class="top-home-images-container raleway">
-			<div class="image main">
-				<a href="#main">
-					<span class="text-container">
-						<h1>Lo + nuevo colección 2017</h1>
-						<p>colección completa <span class="icon-arrow"></span></p>
-					</span>
-			</a>
-			</div>
 
-			<div class="secondary-images-container">
-				<div class="image secondary bed">
-					<a href="#secondary-one">
-						<span class="cat-title">RECÁMARAS</span>
+			<?php
+			$the_query_main = new WP_Query( array('post_type' => 'links_home', 'posts_per_page' => 1, 'orderby'=> 'order_menu','order'=>'ASC') );
+
+			while ( $the_query_main->have_posts() ) : $the_query_main->the_post();?>
+				<div class="image main" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
+					<a href="<?php the_field('link'); ?>">
+						<span class="text-container">
+							<h1><?php the_title(); ?></h1>
+							<?php the_content(); ?>
+						</span>
 					</a>
-				</div>
-				<div class="image secondary sofa">
-					<a href="#secondary-two">
-						<span class="cat-title">SALAS</span>
-					</a>
-				</div>
+				</div><?php 
+			wp_reset_postdata();
+			endwhile;
+
+			$the_query_secondary = new WP_Query( array('post_type' => 'links_home', 'posts_per_page' => 2, 'offset' => 1, 'orderby'=> 'order_menu','order'=>'ASC') ); ?>
+			<div class="secondary-images-container"><?php
+			while ( $the_query_secondary->have_posts() ) : $the_query_secondary->the_post();?>
+				<div class="image secondary" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
+					<a href="<?php the_field('link') ?>"><span class="cat-title"><?php the_title() ?></span> </a>
+				</div><?php
+				endwhile;
+			wp_reset_postdata(); ?>
 			</div>
 		</div>
 
 		<div class="container">
 			<div class="row raleway verde">
 				<h2 class="title">LO MÁS TRENDY</h2>
-				<?php for ($i=0; $i <= 7; $i++) { ?>
-					<div class="col-xs-6 col-sm-3 ">
-						<div class="image-container">
-							<a href="#"></a>
+
+				<?php
+				$the_query = new WP_Query( array(
+				    'post_type' => 'producto',
+				    'tax_query' => array(
+				        array (
+				            'taxonomy' => 'categoria_prod',
+				            'field' => 'slug',
+				            'terms' => 'lo-mas-trendy',
+				        )
+				    ),
+				) );
+
+				while ( $the_query->have_posts() ) :
+				    $the_query->the_post();?>
+				    <div class="col-xs-6 col-sm-3 trendy-item">
+						<div class="image-container" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+							<a href="<?php the_permalink(); ?>"></a>
 						</div>
 						<div class="info-container">
-							<h3><a href="#">OVERTURE</a></h3>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						</div>
 					</div> <?php
-				} ?>
+				endwhile;
+				wp_reset_postdata();
+				?>
 			</div>
 		</div>
 		
@@ -95,34 +115,7 @@ get_header(); ?>
 							<span class="icon-exclusivas"></span>
 						</div>
 						<div class="why-info-container">
-							<div class="title">Puntualidad en las entregas</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="why-icon-container text-center">
-							<span class="icon-exclusivas"></span>
-						</div>
-						<div class="why-info-container">
-							<div class="title">Inventario siempre disponible</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="why-icon-container text-center">
-							<span class="icon-exclusivas"></span>
-						</div>
-						<div class="why-info-container">
-							<div class="title">El mejor trato</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="why-icon-container text-center">
-							<span class="icon-exclusivas"></span>
-						</div>
-						<div class="why-info-container">
-							<div class="title">Lorem ipsum dolor sit amet.</div>
+							<div class="title">Amplia variedad de productos</div>
 							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
 						</div>
 					</div>

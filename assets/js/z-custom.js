@@ -3,8 +3,10 @@ $('#navbarCollapse ul').addClass('navbar-nav mr-auto');
 $(document).ready(function(){
 	$('.why-container').slick({
 		dots: true,
-		infinite: false,
-		speed: 300,
+		infinite: true,
+		speed: 500,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		arrows: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
