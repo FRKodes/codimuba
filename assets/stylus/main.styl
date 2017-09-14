@@ -67,10 +67,11 @@ body
 		display block
 .navbar-collapse
 	width 100%
-	position absolute
-	top 25px
+	position fixed
+	top 50px
 	background rgba(olivo, .95)
 	border none
+	left 0
 	li
 		display block
 		margin-bottom 5px
@@ -150,12 +151,13 @@ h2.title
 		margin 5px 0
 		font-size 1em
 .trendy-item
-	margin-bottom 30px
+	margin-bottom 10px
 	.image-container
 		background-position center center
 		background-size cover
 		background-color rgba(olivo, .2)
 	.info-container
+		height 50px
 		h3
 			a
 				color gris
@@ -231,12 +233,22 @@ footer
 	background-position center center
 	background-size cover
 	&.salas
+		background url(./images/banner-salas-codimuba.jpeg) no-repeat center center
+		background-size cover
 	&.mesas
+		background url(./images/banner-mesas-y-credenzas-codimuba.jpeg) no-repeat center center
+		background-size cover
 	&.comedores
+		background url(./images/banner-comedores-codimuba.jpeg) no-repeat center center
+		background-size cover
 	&.recamaras
+		background url(./images/banner-recamaras-codimuba.jpeg) no-repeat center center
+		background-size cover
 	&.accesorios
+		background url(./images/banner-accesorios-codimuba.jpeg) no-repeat center center
+		background-size cover
 	&.centros-de-entretenimiento
-		background url(./images/comedores.jpg) no-repeat center center
+		background url(./images/banner-centros-de-entretenimiento-codimuba.jpeg) no-repeat center center
 		background-size cover
 .back-olivo
 	background-color olivo

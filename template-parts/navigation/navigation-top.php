@@ -11,7 +11,7 @@
 ?>
 <nav id="site-navigation" class="main-navigation navbar navbar-expand-md fixed-top" role="navigation" aria-label="Top Menu">
 	
-	<a class="navbar-brand" href="//<?php echo $_SERVER['HTTP_HOST'] ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-codimuba.svg" alt="Logo CODIMUBA"></a>
+	<a class="navbar-brand" href="//<?php echo $_SERVER['HTTP_HOST'] ?>/demo"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-codimuba.svg" alt="Logo CODIMUBA"></a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="icon-bar"></span>

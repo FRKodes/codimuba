@@ -110,15 +110,6 @@ get_header(); ?>
 							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
 						</div>
 					</div>
-					<div class="item">
-						<div class="why-icon-container text-center">
-							<span class="icon-exclusivas"></span>
-						</div>
-						<div class="why-info-container">
-							<div class="title">Amplia variedad de productos</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
-						</div>
-					</div>
 				</div>
 
 			</div>
