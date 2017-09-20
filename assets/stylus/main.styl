@@ -200,6 +200,7 @@ h2.title
 			transition background .4s ease
 footer
 	text-transform uppercase
+	position relative
 	.first-block
 		background rgba(verde, .25)
 		padding 15px 0
@@ -228,6 +229,17 @@ footer
 			margin-bottom 3px
 			a
 				color white
+	.sai
+		position absolute
+		width 50px
+		height auto
+		display block
+		bottom 15px
+		right 15px
+		img
+			width 100%
+			height auto
+			display block
 .banner-page
 	height 400px
 	background-position center center
@@ -605,6 +617,9 @@ footer
 			padding-right 100px
 		.footer-menu-block
 			width 25%
+		.sai
+			width 70px
+			right 10%
 @media screen and (min-width: 1400px)
 	.top-home-images-container
 		.image
@@ -619,6 +634,9 @@ footer
 				height 980px
 		.secondary-images-container
 			height 980px
+	footer
+		.sai
+			right 15%
 @media screen and (min-width: 2200px)
 	.top-home-images-container
 		.image

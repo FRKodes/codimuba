@@ -29,6 +29,7 @@
 						<div class="footer-menu-block"><?php wp_nav_menu( array('theme_location' => 'footer_3', 'menu_class' => 'three') ); ?></div>
 					</div>
 				</div>
+				<div class="sai"><a href="https://www.castelec.mx/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sai-logo.png" alt="sai logo"></a></div>
 			</div>
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
