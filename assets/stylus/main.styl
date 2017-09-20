@@ -275,6 +275,11 @@ footer
 .form-container
 	padding-top 30px
 	padding-bottom 30px
+	position relative
+.form-group.error
+	.form-control
+		border-color red
+		transition border-color 1s ease
 .form-control
 	background rgba(gris, .2)
 	border none
@@ -284,6 +289,10 @@ footer
 		outline none
 		border-color gris
 		box-shadow none
+.comments-submit-container
+	position relative
+	overflow hidden
+	border 1px solid red
 .send-btn
 	border-radius 0
 	border none
@@ -292,6 +301,23 @@ footer
 	width 100%
 	text-transform uppercase
 	letter-spacing 1px
+.btn-primary:active
+.btn-primary:hover
+	background rgba(gris, .7)
+	transition all .5s ease
+.email-sent-alert
+	background-color gris
+	color white
+	display none
+	height auto
+	margin 0 auto
+	padding 30px 20px
+	position absolute
+	text-align center
+	top 500px
+	width 300px
+	strong
+		font-size 1.2em
 .page-header
 	padding-bottom 9px
 	margin 0
@@ -462,6 +488,14 @@ footer
 				left 50%
 				bottom 20px
 				margin-left -70px
+	.email-sent-alert
+		margin 0 0 0 -150px
+		padding 30px 20px
+		width 300px
+		top 130px
+		left 50%
+		strong
+			font-size 1.2em
 	.col-sm-6
 		.row.first
 			margin-right -10px
