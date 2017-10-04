@@ -23,6 +23,11 @@ $(document).ready(function(){
 		]
 	});
 
+	$('.navbar-toggler').on('click', function () {
+		console.log('clicked!');
+		$('.site-header').addClass('transparent menu-opened');
+	});
+
 	$('.product-gallery').slick({
 		dots: true,
 		infinite: true,
@@ -34,11 +39,13 @@ $(document).ready(function(){
 	});
 
 	$( window ).scroll(function() {
-		var vertical_position = $('body').scrollTop();
+		var vertical_position = $('html').scrollTop();
 		if (vertical_position >=1) {
 			$('#masthead').addClass('transparent');
 		}else{
-			$('#masthead').removeClass('transparent');
+			if (!$('.site-header').hasClass('menu-opened')) {
+				$('#masthead').removeClass('transparent');
+			} else{};
 		};
 	});
 
@@ -74,7 +81,6 @@ $(document).ready(function(){
 				}
 	      );
 	      posting.done(function( data ){
-	        console.log(data);
 	        $('#contactForm')[0].reset();
 	        $('.email-sent-alert').fadeIn().delay(3000).fadeOut();
 	      });

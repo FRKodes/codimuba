@@ -38,8 +38,8 @@
 						</div>
 
 						<div class="form-group">
-							<label for="telefono">Teléfono (opcional)</label>
-							<input type="text" name="telefono" class="form-control">
+							<label for="telefono">Teléfono</label>
+							<input type="text" name="telefono" class="form-control" data-validate="required">
 						</div>
 
 						<div class="form-group">

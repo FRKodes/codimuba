@@ -248,6 +248,7 @@ footer
 		background url(./images/banner-salas-codimuba.jpeg) no-repeat center center
 		background-size cover
 	&.mesas
+	&.mesas-ocasionales
 		background url(./images/banner-mesas-y-credenzas-codimuba.jpeg) no-repeat center center
 		background-size cover
 	&.comedores
@@ -428,7 +429,7 @@ footer
 			justify-content flex-end
 		li
 			display inline-block
-			margin 0 10px
+			margin 0 6px
 			&:first-of-type
 				margin-top 0
 			&:last-of-type
@@ -557,6 +558,8 @@ footer
 			transition background .4s ease
 	.navbar-collapse
 		font-size 1.1em
+		li
+			margin 0 8px
 	.navbar
 		width 970px
 		margin 0 auto
@@ -596,6 +599,9 @@ footer
 @media screen and (min-width: 1200px)
 	.navbar
 		width 1170px
+	.navbar-collapse
+		li
+			margin 0 10px
 	.banner-page
 		height 650px
 	.phrase-image-container
