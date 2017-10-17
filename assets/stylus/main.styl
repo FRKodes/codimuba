@@ -76,12 +76,39 @@ body
 		display block
 		margin-bottom 5px
 		margin-top 5px
+		position relative
+		height auto
+		overflow hidden
 		a
 			color white
+			width 100%
+			display block
 		&:first-of-type
 			margin-top 15px
 		&:last-of-type
 			margin-bottom 15px
+.dropdown-menu
+	background transparent
+	box-shadow none
+	height auto
+	overflow hidden
+	border-radius 0
+	border none
+	margin 7.5px 10px
+	position inherit
+	li
+		display block
+		width 100%
+		height auto
+		&:first-of-type
+			margin-top 0
+		&:last-of-type
+			margin-bottom 0
+		a
+			color white
+			position relative
+			display block
+			padding 0
 .top-home-images-container
 	overflow hidden
 	.image
@@ -458,6 +485,7 @@ h2.aviso-title
 		li
 			display inline-block
 			margin 0 6px
+			overflow visible
 			&:first-of-type
 				margin-top 0
 			&:last-of-type
@@ -468,6 +496,32 @@ h2.aviso-title
 				&:hover
 					color rgba(white, .5)
 					transition color .5s ease
+	.dropdown-menu
+		background olivo
+		margin 7.5px 10px
+		position absolute
+		left -30px
+		margin-top 17px
+		border 1px solid amarillo
+		li
+			display block
+			width 100%
+			height auto
+			font-size .8em
+			&:first-of-type
+				margin-top 0
+			&:last-of-type
+				margin-bottom 0
+			a
+				color white
+				position relative
+				display block
+				padding 0
+				transition color .5s ease
+	.dropdown-menu>li>a:hover
+		background none
+		color rgba(white, .7)
+		transition color .5s ease
 	h2.title
 		text-align left
 		font-size 1.6em
@@ -589,13 +643,18 @@ h2.aviso-title
 			background none !important
 			transition background .4s ease
 	.navbar-collapse
-		font-size 1.1em
+		font-size .9em
 		li
 			margin 0 8px
 	.navbar
-		width 970px
 		margin 0 auto
 		position relative
+		width 970px
+	.dropdown-menu
+		left -20px
+		margin-top 16px
+		li
+			font-size .9em
 	.image-container
 		height 215px
 	.top-home-images-container

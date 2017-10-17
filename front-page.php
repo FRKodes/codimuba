@@ -89,7 +89,8 @@ get_header(); ?>
 						</div>
 						<div class="why-info-container">
 								<div class="title">Productos de la más alta calidad</div>
-								<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
+								<div class="info">Contamos sólo con los mejores productos en tendencia y estilos realizados con materiales de alta calidad a precios competitivos.</div>
+
 						</div>
 					</div>
 					<div class="item">
@@ -98,7 +99,7 @@ get_header(); ?>
 						</div>
 						<div class="why-info-container">
 							<div class="title">Más de 20 años en el mercado</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
+							<div class="info">A medida que los años han transcurrido y que nuestro negocio ha crecido, nos hemos convertido rápidamente en uno de los mayoristas de muebles de mayor preferencia.</div>
 						</div>
 					</div>
 					<div class="item">
@@ -107,7 +108,7 @@ get_header(); ?>
 						</div>
 						<div class="why-info-container">
 							<div class="title">Marcas exclusivas</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi ad corporis itaque repellendus a nesciunt delectus .</div>
+							<div class="info">Con los nuevos productos que se integran continuamente a nuestro amplio catálogo, con la seguridad de obtener, al mismo tiempo, servicio, calidad y atención, logrando de esta manera, mantener la satisfacción de nuestros clientes.</div>
 						</div>
 					</div>
 				</div>

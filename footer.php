@@ -20,7 +20,6 @@
 					<div class="col-xs-12 col-sm-4 first-block">
 						<ul class="social-links">
 							<li><a target="_blank" href="https://www.facebook.com/codimuba" class="icon-facebook"></a></li>
-							<li><a target="_blank" href="https://www.instagram.com" class="icon-instagram"></a></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-8 second-block">
@@ -36,6 +35,13 @@
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84802922-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-84802922-9');
+</script>
 </body>
 </html>

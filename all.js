@@ -28,6 +28,15 @@ function(a){a=d("[data-validate]",a===l?c.$form:a);h.autoDetect&&(a=d("input[req
 b=RegExp(b,c);return a.val().match(b)?!0:!1};c.checkRegExp=function(a,b){return a.val().match(h.regExp[b])?!0:!1};c.checkMaxLength=function(a,b){return""===a.val()?!0:a.val().length<=b};c.checkMinLength=function(a,b){return""===a.val()?!0:a.val().length>=b};c.checkMax=function(a,b){return""===a.val()?!0:parseFloat(a.val())<=parseFloat(b)};c.checkMin=function(a,b){return""===a.val()?!0:parseFloat(a.val())>=parseFloat(b)}}})(window,jQuery);
 $('#navbarCollapse ul').addClass('navbar-nav mr-auto');
 
+$('.menu-item-has-children a:first-of-type').attr('data-toggle', 'dropdown');
+$('ul.sub-menu').addClass('dropdown-menu');
+
+$("ul.dropdown-menu li").on("click", function (e) {
+    e.stopPropagation();
+});
+
+
+
 $(document).ready(function(){
 	$('.why-container').slick({
 		dots: true,

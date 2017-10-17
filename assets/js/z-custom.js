@@ -1,5 +1,14 @@
 $('#navbarCollapse ul').addClass('navbar-nav mr-auto');
 
+$('.menu-item-has-children a:first-of-type').attr('data-toggle', 'dropdown');
+$('ul.sub-menu').addClass('dropdown-menu');
+
+$("ul.dropdown-menu li").on("click", function (e) {
+    e.stopPropagation();
+});
+
+
+
 $(document).ready(function(){
 	$('.why-container').slick({
 		dots: true,
