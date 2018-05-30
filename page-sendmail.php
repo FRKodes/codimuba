@@ -15,10 +15,11 @@ if (isset($_POST['email'])) {
     $mail = new PHPMailer(true);
     $mail->From = $email;
     $mail->FromName = $nombre;
-    $mail->addAddress('contacto@codimuba.com', 'CODIMUBA');
-    // $mail->addAddress('frkalderon@gmail.com', 'CODIMUBA');
-    $mail->addReplyTo("contacto@codimuba.com", "Reply");
+    $mail->addAddress('ventas@codimuba.com', 'CODIMUBA');
+    $mail->addAddress('recepcion@codimuba.com', 'CODIMUBA');
+    $mail->addReplyTo("ventas@codimuba.com", "Reply");
     $mail->addBCC("frkalderon@gmail.com");
+    $mail->addBCC("monica@codimuba.com");
     $mail->isHTML(true);
     $mail->Subject = "Contacto Web CODIMUBA ";
     $mail->Body = "<p>". $nombre ." escribió: </p>";
